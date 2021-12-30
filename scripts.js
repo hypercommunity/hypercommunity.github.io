@@ -18,7 +18,7 @@ function getStatus(url) {
             checkBtn.innerText = 'CHECK NOW';
             if (request.status == 200) {
                 if (request.response == 'Frequent requests, please try again later') {
-                    err.innerText = 'Sorry, please use VPN to login.';
+                    err.innerText = 'Not working, please use VPN to login.';
                     err.style.display = 'block';
                 } else {
                     window.location.replace("https://h5.thehyperverse.net");
