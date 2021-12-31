@@ -67,6 +67,11 @@ h1 > span {
     margin: 0;
     font-size: 18px;
     transition: all 0.12s ease;
+    text-decoration: none;
+}
+a.btn {
+    margin-top: 20px;
+    line-height: 50px;
 }
 .btn.loading {
     pointer-events: none;
