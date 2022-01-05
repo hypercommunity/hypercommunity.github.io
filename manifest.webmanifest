@@ -1,0 +1,47 @@
+{
+    "short_name": "Hyper Community",
+    "name": "Hyper Community",
+    "description": "Created by Hyper Community member with ❤",
+    "icons": [
+        {
+            "src": "/favicon/16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/favicon/32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/favicon/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/favicon/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#8644ff",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "theme_color": "#8644ff",
+    "shortcuts": [
+        {
+            "name": "Hyper Community",
+            "short_name": "Hyper Community",
+            "description": "Created by Hyper Community member with ❤",
+            "url": "/app?source=pwa",
+            "icons": [
+                {
+                    "src": "/favicon/192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}

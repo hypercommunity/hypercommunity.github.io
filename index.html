@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="/cache.manifest">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Community</title>
     <meta name="theme-color" content="#8644ff">
-    <title>Check Hyperverse Status</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel=canonical href="https://hypercommunity.github.io/">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hyper Community">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hyper Community">
+    <link rel="apple-touch-icon" href="/favicon/192x192.png">
+    <meta name="msapplication-TileImage" content="/favicon/192x192.png">
+    <meta name="msapplication-TileColor" content="#8644ff">
+    <meta name="description" content="Hyper Community - a useful app created by Hyper Community member with ❤">
+    <meta property="og:title" content="Hyper Community">
+    <meta property="og:site_name" content="Hyper Community">
+    <meta property="og:url" content="https://hypercommunity.github.io/">
+    <meta property="og:description" content="Hyper Community - a useful app created by Hyper Community member with ❤">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hypercommunity.github.io/images/og-image.jpg">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/192x192.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="style.css?v=0.001">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEGDP59RX7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LEGDP59RX7');
+    </script>
 </head>
 
 <body>
@@ -19,17 +46,10 @@
                 class="btn">JOIN OUR GROUP</a>
             <span class="error" id="err"></span>
         </div>
+        <span class="install">Get this app for getting latest updates by Hyper Community. <a href="javscript:void(0)" class="btn-install" id="install-add">Install App</a></span>
     </div>
-    <script src="scripts.js?v=1.0"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEGDP59RX7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-LEGDP59RX7');
-    </script>
+    <script src="scripts.js?v=0.001"></script>
+    <script src="service-worker.js"></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

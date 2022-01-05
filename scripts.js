@@ -39,4 +39,38 @@ docReady(function () {
         checkBtn.innerText = 'PLEASE WAIT...';
         getStatus('https://api.thehyperverse.net/api/getSwitchByName?switchType=login&uname=bikash');
     });
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        //pwa prompt
+        let deferredPrompt;
+        var installPrompt = document.querySelector('.install');
+        var buttonInstall = document.getElementById('install-add');
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can install the PWA
+            installPrompt.style.display = 'block';
+        });
+        buttonInstall.addEventListener('click', (e) => {
+            // Hide the app provided install promotion
+            installPrompt.remove();
+            // Show the install prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+            });
+        });
+        window.addEventListener('appinstalled', (evt) => {
+            gtag('event', 'appInstall');
+            setTimeout(function () {
+                alert("The Hyper Community app has been installed successfully. Now you can access it via homescreen and also runs offline.");
+            }, 7000);
+        });
+    }
 });
