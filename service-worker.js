@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 //importScripts('https://cdn.webpushr.com/sw-server.min.js');
-const version = "0.003";
+const version = "0.004";
 const cacheName = `timer-${version}`;
 caches.keys().then(function (keyList) {
     return Promise.all(keyList.map(function (key) {
@@ -29,7 +29,7 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(cacheName).then(cache => {
             return cache.addAll([
-                '/?v0.003',
+                '/?v0.004',
                 '/manifest.webmanifest',
                 '/index.html',
                 '/favicon/16x16.png',
