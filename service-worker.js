@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 //importScripts('https://cdn.webpushr.com/sw-server.min.js');
-const version = "0.001";
+const version = "0.002";
 const cacheName = `timer-${version}`;
 caches.keys().then(function (keyList) {
     return Promise.all(keyList.map(function (key) {
@@ -29,7 +29,7 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(cacheName).then(cache => {
             return cache.addAll([
-                '/?v0.001',
+                '/?v0.002',
                 '/manifest.webmanifest',
                 '/index.html',
                 '/favicon/16x16.png',
@@ -46,7 +46,7 @@ self.addEventListener('install', e => {
                 '/fonts/ArtemusRegular.woff',
                 '/fonts/ArtemusRegular.woff2',
                 //js
-                '/scripts.js?v0.001'
+                '/scripts.js?v0.002'
             ]).then(() => self.skipWaiting());
         })
     );
