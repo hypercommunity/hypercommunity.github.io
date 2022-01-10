@@ -1,7 +1,7 @@
 {
-    "short_name": "Hyper Community",
-    "name": "Hyper Community",
-    "description": "Created by Hyper Community member with ❤",
+    "short_name": "Hyperians",
+    "name": "Hyperians",
+    "description": "Created by Hyperians with ❤",
     "icons": [
         {
             "src": "/favicon/16x16.png",
@@ -32,9 +32,9 @@
     "theme_color": "#8644ff",
     "shortcuts": [
         {
-            "name": "Hyper Community",
-            "short_name": "Hyper Community",
-            "description": "Created by Hyper Community member with ❤",
+            "name": "Hyperians",
+            "short_name": "Hyperians",
+            "description": "Created by Hyperians with ❤",
             "url": "/app?source=pwa",
             "icons": [
                 {
