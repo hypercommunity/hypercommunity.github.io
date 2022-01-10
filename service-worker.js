@@ -29,7 +29,7 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(cacheName).then(cache => {
             return cache.addAll([
-                '/?v0.002',
+                '/?v0.003',
                 '/manifest.webmanifest',
                 '/index.html',
                 '/favicon/16x16.png',
