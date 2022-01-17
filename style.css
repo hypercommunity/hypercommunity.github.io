@@ -139,3 +139,46 @@ a.btn {
         font-weight: normal;
     }
 }
+@keyframes marquee {
+    0% {
+        margin-left: 100%;
+        transform: translateX(0%);
+    }
+    100% {
+        margin-left: 0;
+        transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes marquee {
+    0% {
+        margin-left: 100%;
+        transform: translateX(0%);
+    }
+    100% {
+        margin-left: 0;
+        transform: translateX(-100%);
+    }
+}
+.marquee-holder {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 7px;
+    background: #000;
+    background: rgb(134 68 255 / 70%);
+    font-size: 15px;
+    line-height: 18px;
+}
+.marquee {
+    -webkit-animation: marquee 120s linear infinite;
+    animation: marquee 120s linear infinite;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.marquee:hover {
+    animation-play-state: paused;
+}
