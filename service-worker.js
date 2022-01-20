@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 //importScripts('https://cdn.webpushr.com/sw-server.min.js');
-const version = "0.008";
+const version = "0.009";
 const cacheName = `timer-${version}`;
 caches.keys().then(function (keyList) {
     return Promise.all(keyList.map(function (key) {
@@ -29,7 +29,7 @@ self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(cacheName).then(cache => {
             return cache.addAll([
-                '/?v0.008',
+                '/?v0.009',
                 '/manifest.webmanifest',
                 '/index.html',
                 '/favicon/16x16.png',
@@ -38,7 +38,7 @@ self.addEventListener('install', e => {
                 '/favicon/512x512.png',
                 '/favicon/apple-touch-icon.png',
                 //css
-                '/style.css?v0.007',
+                '/style.css?v0.008',
                 //images
                 '/images/bg.png',
                 //fonts
@@ -46,7 +46,7 @@ self.addEventListener('install', e => {
                 '/fonts/ArtemusRegular.woff',
                 '/fonts/ArtemusRegular.woff2',
                 //js
-                '/scripts.js?v0.003'
+                '/scripts.js?v0.004'
             ]).then(() => self.skipWaiting());
         })
     );
