@@ -81,6 +81,14 @@ a.btn {
 .btn:active {
     transform: scale(0.98);
 }
+.latest-post {
+    display: block;
+    padding: 25px 0 5px;
+}
+.latest-post a {
+    color: #fff;
+    font-weight: bold;
+}
 @media only screen and (max-width: 500px) {
     body {
         background-size: cover;
